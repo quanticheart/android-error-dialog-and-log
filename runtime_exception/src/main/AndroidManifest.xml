@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.master.killercode.runtime_exception">
+
+    <application>
+        <activity
+            android:name=".ActivityError"
+            android:process=":error_activity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="*.controller.logger.SendLogActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
